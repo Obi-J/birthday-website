@@ -3,46 +3,100 @@ import Image from "next/image"
 interface Memory {
   src: string
   caption: string
-  year: string
+  era: string
   alt: string
 }
 
 const memories: Memory[] = [
   {
-    src: "/images/memory-1.jpg",
-    caption: "The arcade we never wanted to leave",
-    year: "Stage 01",
-    alt: "Vintage 80s arcade cabinets glowing with neon pink and cyan light",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.14-UpXThNORUz1ZrDCYhU4eNpsyax3BrR.jpeg",
+    caption: "Day one, already a star",
+    era: "Stage 01 / The Origin",
+    alt: "Baby Early crawling in a teal and white striped onesie",
   },
   {
-    src: "/images/memory-2.jpg",
-    caption: "Mixtapes on repeat all summer",
-    year: "Stage 02",
-    alt: "Stack of vintage cassette tapes and a walkman with neon lighting",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.42%20%282%29-BC3ZwQA3Uz0HgX0wFp2iHGsi6RPvP6.jpeg",
+    caption: "First adventures",
+    era: "Stage 02 / Rookie Year",
+    alt: "Toddler Early in a red shirt next to an old teal car",
   },
   {
-    src: "/images/memory-3.jpg",
-    caption: "Saturday morning cartoons forever",
-    year: "Stage 03",
-    alt: "Vintage CRT television glowing with static and neon colors",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.13%20%282%29-5miqd5LDmbFAVtLLyTawRjdysRr3BU.jpeg",
+    caption: "Born ready, bow tie & all",
+    era: "Stage 03 / Born Sharp",
+    alt: "Baby Early in a floral vest, bow tie and tiny red shoes",
   },
   {
-    src: "/images/memory-4.jpg",
-    caption: "Boombox blasting on the back porch",
-    year: "Stage 04",
-    alt: "Retro 80s boombox lit with neon pink and cyan",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.44%20%281%29-48rVhMA6AqDZ1Qd3u66VTfxOUc7avN.jpeg",
+    caption: "Family always",
+    era: "Stage 04 / Roots",
+    alt: "Family photo with grandma in white traditional dress and three children",
   },
   {
-    src: "/images/memory-5.jpg",
-    caption: "City lights on the long drive home",
-    year: "Stage 05",
-    alt: "Glowing magenta and cyan abstract neon shapes",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.42-rZ1e3zHhtJyeVOA7pmQNeKh2msUjHq.jpeg",
+    caption: "Sunday best, gold gele",
+    era: "Stage 05 / The Crew",
+    alt: "Family portrait with mom in gold gele and three children in formalwear",
   },
   {
-    src: "/images/memory-6.jpg",
-    caption: "Two-player mode, always",
-    year: "Stage 06",
-    alt: "Vintage handheld game console and joystick with neon rim lighting",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.43%20%284%29-QwgDGt8NbplwoyIPiHVELfaGIdrA2W.jpeg",
+    caption: "Future broadcaster confirmed",
+    era: "Stage 06 / On Air",
+    alt: "Young Early at a radio microphone wearing a navy and grey striped polo",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.13-XClJbCz2c0ffHgLT1f6gd7l0to7Qm8.jpeg",
+    caption: "Schooldays, green & white",
+    era: "Stage 07 / Class Of",
+    alt: "Class school photo with many children in green and white uniforms",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.44%20%282%29-qflJ8Z2RuXCCGwBgYkzFl8k3LGwyEq.jpeg",
+    caption: "Stage lights, 2006",
+    era: "Stage 08 / Curtain Call",
+    alt: "Award presentation on Dramatic Day, 12th July 2006, in a school classroom",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.12-pqpA1A174aSDyiURkQdDhdbdEP513i.jpeg",
+    caption: "The OG squad",
+    era: "Stage 09 / Squad Goals",
+    alt: "Childhood group photo with kids posing in front of a stone wall, one in a Lakers jersey",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.14%20%282%29-d2RDflNppNiFjYst3TLNzNAWsLsyE0.jpeg",
+    caption: "Press pass era",
+    era: "Stage 10 / Backstage",
+    alt: "Three young men, Early in the middle wearing a press lanyard and sunglasses",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.12%20%281%29-BI7yORxqkPgnAKbbrPg6XVUw42irA9.jpeg",
+    caption: "Suited and booted",
+    era: "Stage 11 / Final Boss",
+    alt: "Early in a black tuxedo with a bow tie next to a friend in a white traditional outfit",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.43%20%282%29-xbsQmIVOqpQzKKNS1ACuzfioSuNIFY.jpeg",
+    caption: "Mama's pride",
+    era: "Stage 12 / Bonus Round",
+    alt: "Early in red graduation robe and sunglasses hugging mom in a pink outfit",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.44%20%283%29-OA42Gaq30kpAS3R1gADJmqpUA8c6lR.jpeg",
+    caption: "Graduate. Top score.",
+    era: "Stage 13 / Game Cleared",
+    alt: "Early in a maroon suit and academic robe at convocation with mom in yellow lace",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2013.04.42%20%281%29-QOnfHgFtY7rRZ5R5wscOcnHbNf4yj9.jpeg",
+    caption: "The crew, present day",
+    era: "Stage 14 / New Game+",
+    alt: "Selfie of five friends outside an ATM, Early in the front in an orange shirt and glasses",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-30%20at%2012.10.13%20%281%29-eVAsRBEEWIQGEitDcR7psfVUB5jOuO.jpeg",
+    caption: "Still rare",
+    era: "Stage 15 / Endgame",
+    alt: "Selfie of Early in a yellow polo with a friend in a 'RARE' cap in a supermarket aisle",
   },
 ]
 
@@ -64,8 +118,8 @@ export function PhotoGallery() {
             <span className="mt-3 block neon-cyan text-accent">Hits</span>
           </h2>
           <p className="mt-8 max-w-xl text-pretty font-mono text-xl leading-snug text-muted-foreground sm:text-2xl">
-            {">"} Loading memory bank... a few of my favorite levels we&apos;ve
-            cleared together. Press any image to remember.
+            {">"} Loading memory bank... three decades of stages cleared, all
+            with the same player one. Press any image to remember.
           </p>
           <span aria-hidden="true" className="mt-10 h-px w-24 bg-primary" />
         </div>
@@ -86,7 +140,7 @@ export function PhotoGallery() {
                       alt={memory.alt}
                       fill
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover saturate-150 transition duration-700 group-hover:scale-[1.04]"
+                      className="object-cover transition duration-700 group-hover:scale-[1.04]"
                     />
                     {/* Scanlines on each image */}
                     <div
@@ -108,7 +162,7 @@ export function PhotoGallery() {
                     </span>
                   </figcaption>
                   <p className="mt-2 font-display text-[10px] tracking-[0.3em] text-muted-foreground uppercase">
-                    {memory.year}
+                    {memory.era}
                   </p>
                 </figure>
               </li>

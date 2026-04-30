@@ -2,7 +2,7 @@ import Image from "next/image"
 
 interface BirthdayHeroProps {
   name: string
-  age: number
+  age: string | number
 }
 
 export function BirthdayHero({ name, age }: BirthdayHeroProps) {
@@ -41,7 +41,7 @@ export function BirthdayHero({ name, age }: BirthdayHeroProps) {
         <div className="mb-10 flex w-full max-w-2xl items-center justify-between font-mono text-base text-accent sm:text-lg">
           <span className="neon-cyan">1UP</span>
           <span className="neon-cyan tracking-[0.3em]">
-            HI-SCORE {String(age).padStart(2, "0")}000000
+            HI-SCORE {age}000000
           </span>
           <span className="neon-cyan">2UP</span>
         </div>
@@ -59,10 +59,14 @@ export function BirthdayHero({ name, age }: BirthdayHeroProps) {
         <div className="mt-12 flex items-center gap-4 font-mono text-2xl text-foreground sm:text-3xl">
           <span aria-hidden="true" className="h-px w-12 bg-primary" />
           <p className="neon-magenta tracking-widest">
-            LEVEL {String(age).padStart(2, "0")} UNLOCKED
+            LEVEL {age} UNLOCKED
           </p>
           <span aria-hidden="true" className="h-px w-12 bg-primary" />
         </div>
+
+        <p className="mt-4 font-mono text-base text-muted-foreground sm:text-lg">
+          {"// game says 31, but we'll always celebrate the 30 milestone"}
+        </p>
 
         <p className="mt-10 max-w-xl text-pretty font-mono text-xl leading-snug text-muted-foreground sm:text-2xl">
           Insert coin to celebrate the legend, the high-scorer, the player one
