@@ -8,7 +8,7 @@ import { MusicPlayer } from "@/components/music-player"
 // Swap these placeholders for your brother's real details.
 const BROTHER_NAME = "Early"
 const BROTHER_AGE = "30+"
-const YOUR_NAME = "Your sibling"
+const YOUR_NAME = "Obi"
 
 export default function Page() {
   return (
