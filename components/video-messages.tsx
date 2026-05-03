@@ -7,12 +7,18 @@ type VideoMessage = {
 }
 
 const VIDEO_MESSAGES: VideoMessage[] = [
-  // Add your video messages here
-  // {
-  //   from: "Mom",
-  //   src: "/videos/mom-message.mp4",
-  //   thumbnail: "/videos/thumbnails/mom-message.jpg",
-  // },
+  {
+    from: "Nat",
+    src: "https://drive.google.com/uc?export=download&id=1ylIzHVANIlQxCcVFmPU_8OnmbKZoYb0H",
+  },
+  {
+    from: "Ib",
+    src: "https://drive.google.com/uc?export=download&id=1z6YG2Lphi6eBh3YDea8VX_nH2_bbnI0_",
+  },
+  {
+    from: "Tee",
+    src: "https://drive.google.com/uc?export=download&id=1egxB-aOVvZjUGdgvGlkxFRJGEMIYMJ65",
+  },
 ]
 
 export function VideoMessages() {
@@ -97,3 +103,6 @@ export function VideoMessages() {
     </section>
   )
 }
+
+
+export { VideoMessages }

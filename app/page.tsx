@@ -20,7 +20,7 @@ export default function Page() {
       <VideoMessages />
       <PhotoGallery />
       <BirthdayFooter name={BROTHER_NAME} />
-      <MusicPlayer src="/audio/birthday-song.mp3" trackName="Birthday Anthem" />
+      <MusicPlayer src="https://res.cloudinary.com/df4k36yjr/video/upload/v1777792002/Happy_31st_Birthday_You_Are_Thirty-One_Years_Old_irz6fm.mp3" trackName="Happy 31st Birthday" />
     </main>
   )
 }
