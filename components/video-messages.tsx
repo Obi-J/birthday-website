@@ -1,23 +1,20 @@
-import { Play } from "lucide-react"
-
 type VideoMessage = {
   from: string
-  src: string
-  thumbnail?: string
+  embedUrl: string
 }
 
 const VIDEO_MESSAGES: VideoMessage[] = [
   {
     from: "Nat",
-    src: "https://drive.google.com/uc?export=download&id=1ylIzHVANIlQxCcVFmPU_8OnmbKZoYb0H",
+    embedUrl: "https://drive.google.com/file/d/1ylIzHVANIlQxCcVFmPU_8OnmbKZoYb0H/preview",
   },
   {
     from: "Ib",
-    src: "https://drive.google.com/uc?export=download&id=1z6YG2Lphi6eBh3YDea8VX_nH2_bbnI0_",
+    embedUrl: "https://drive.google.com/file/d/1z6YG2Lphi6eBh3YDea8VX_nH2_bbnI0_/preview",
   },
   {
     from: "Tee",
-    src: "https://drive.google.com/uc?export=download&id=1egxB-aOVvZjUGdgvGlkxFRJGEMIYMJ65",
+    embedUrl: "https://drive.google.com/file/d/1egxB-aOVvZjUGdgvGlkxFRJGEMIYMJ65/preview",
   },
 ]
 
@@ -76,19 +73,13 @@ export function VideoMessages() {
               />
 
               <div className="relative aspect-video bg-black overflow-hidden">
-                <video
-                  src={msg.src}
-                  poster={msg.thumbnail}
-                  controls
-                  className="w-full h-full object-cover"
+                <iframe
+                  src={msg.embedUrl}
+                  className="w-full h-full border-0"
+                  allow="autoplay"
+                  allowFullScreen
+                  title={`Video message from ${msg.from}`}
                 />
-
-                <button
-                  className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity"
-                  aria-label={`Play video from ${msg.from}`}
-                >
-                  <Play className="w-12 h-12 text-white fill-white" />
-                </button>
               </div>
 
               <div className="p-4 border-t border-border">
@@ -103,6 +94,3 @@ export function VideoMessages() {
     </section>
   )
 }
-
-
-export { VideoMessages }
