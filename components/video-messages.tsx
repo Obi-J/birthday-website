@@ -6,15 +6,15 @@ type VideoMessage = {
 const VIDEO_MESSAGES: VideoMessage[] = [
   {
     from: "Nat",
-    embedUrl: "https://drive.google.com/file/d/1ylIzHVANIlQxCcVFmPU_8OnmbKZoYb0H/preview",
+    embedUrl: "https://drive.google.com/file/d/11DDDICaDQYjkd9tJeV_iCw44-HvNZSlP/preview",
   },
   {
     from: "Ib",
-    embedUrl: "https://drive.google.com/file/d/1z6YG2Lphi6eBh3YDea8VX_nH2_bbnI0_/preview",
+    embedUrl: "https://drive.google.com/file/d/11WVC1qgYOe6ZaF3LvWT1vJRJ0SUxANPh/preview",
   },
   {
     from: "Tee",
-    embedUrl: "https://drive.google.com/file/d/1egxB-aOVvZjUGdgvGlkxFRJGEMIYMJ65/preview",
+    embedUrl: "https://drive.google.com/file/d/14PkYBvMSmGategqNYxh6B1H4rp8wZMhI/preview",
   },
 ]
 
